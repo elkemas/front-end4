@@ -24,22 +24,22 @@ const question=[
         answer: 2
     },
     {
-        q: 'Who scored the first Premier League goal in 1992?'
+        q: 'Who scored the first Premier League goal in 1992?',
         options: ['Thierry Henry', 'Brian Deane', 'Ronaldinho'],
         answer: 1
     },
     {
-        q: 'How many bones do babies have?'
+        q: 'How many bones do babies have?',
         options: ['206', 'less than 100', '300'],
         answer: 2
     }
     {
-        q: 'STEM is an acronym for what?'
+        q: 'STEM is an acronym for what?',
         options: ['skin,tongue,eyes,mouth', 'science,technology,engineering,maths', 'science techniques encapsulating maths'],
         answer: 1
     }
     {
-        q: 'Who was the first black Female President?'
+        q: 'Who was the first black Female President?',
         options: ['Ellen Johnson Sirleaf', 'Shirley Anita Chisholm', 'Margaret Tatcher'],
         answer: 0
     }
