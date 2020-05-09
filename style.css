@@ -1,0 +1,131 @@
+.hidden{
+    display: none;
+}
+
+body{
+    margin: 0;
+    background-color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.quiz_container{
+    width: 50;
+    height: 50;
+    background-color: aquamarine;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.quiz_container::after, .quiz_container::before{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.question_number
+.question
+.button
+.answers_tracker{
+
+}
+
+.question_number h3{
+    color: #1b9286;
+    border-bottom: 3px solid #cccc;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.question{
+    font-size: 20px;
+    padding: 15px;
+    color:  rgb(189, 15, 111) ;
+}
+
+.options div{
+    background-color:#cccc;
+    font-size: 16px;
+    color: rgb(189, 15, 111);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.options div.disable{
+    pointer-events: none;
+}
+
+.options div.correct{
+    z-index: 2;
+    color: green;
+}
+
+.options div.wrong::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    z-index: -2;
+   
+    animation: animateBackground 2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateBackground{
+    0%{transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.button .btn{
+    padding: 10px 30px;
+    background-color: rgb(150, 54, 240);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(240, 175, 12);
+    margin: 15px;
+    display: inline-block;
+}
+
+.answers_tracker{
+    border-top: 2px solid #cccc;
+    padding-top: 15px;
+}
+
+.answers_tracker div{
+    height: 30px;
+    width: 30px;
+    background-color: #cccc;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.answers_tracker div.correct{
+    background-color: green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.answers_tracker div.wrong{
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+  

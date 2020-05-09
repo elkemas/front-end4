@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>quiz Game</title>
+</head>
+<body>
+
+  <div class="quiz_container">
+    <div class="question_number">
+      <h3>Question<span> 1</span> of</span> 5</h3>
+    </div>
+
+    <div class="question">
+      <p>How many hours can a Koala sleep in an average day?</p>
+    </div>
+
+    <div class="options">
+      <div id="0" class="option 1" onclick="check(this)">2 hours</div>
+      <div id="1" class="option 2"  onclick="check(this)">12 hours</div>
+      <div id="2" class="option 3"  onclick="check(this)">20 hours</div>
+    </div>
+
+    <div class="button">
+      <button type="button" id="submit" class="btn" hidden onclick="next()">Next</button>
+    </div>
+
+    <div class="answers_tracker">
+ 
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      
+    </div>
+
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
